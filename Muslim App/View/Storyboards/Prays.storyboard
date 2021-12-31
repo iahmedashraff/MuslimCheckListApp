@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Fajr PrayVC-->
+        <scene sceneID="NHS-R0-6JN">
+            <objects>
+                <viewController restorationIdentifier="FajrPrayVC" storyboardIdentifier="FajrPrayVC" id="EX3-tA-UCh" customClass="FajrPrayVC" customModule="Muslim_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IW2-H7-bbg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fagr" translatesAutoresizingMaskIntoConstraints="NO" id="HjV-LK-r5u">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m14-UY-jJv">
+                                <rect key="frame" x="0.0" y="610" width="414" height="286"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="LJN-MZ-7QW">
+                                        <rect key="frame" x="20" y="68" width="374" height="150"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="IqZ-rC-QAW">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="35"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60e-Sa-YEd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="60e-Sa-YEd" secondAttribute="height" multiplier="1:1" id="jG4-b8-VQC"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.08235294118" green="0.76470588240000004" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sonaFajrPressed:" destination="EX3-tA-UCh" eventType="touchUpInside" id="38M-Xv-fZB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-zo-kkh">
+                                                        <rect key="frame" x="185" y="0.0" width="189" height="35"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سنه الفجر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sl5-j7-kPh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="7.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ركعتان قبل الفجر)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZm-Wf-GFS">
+                                                                <rect key="frame" x="0.0" y="27.5" width="189" height="7.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="efg-Pm-Dip">
+                                                <rect key="frame" x="0.0" y="115" width="374" height="35"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMe-my-JTW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="IMe-my-JTW" secondAttribute="height" multiplier="1:1" id="ZVb-1J-FPW"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="FajrPressed:" destination="EX3-tA-UCh" eventType="touchUpInside" id="DLH-BO-cT9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cAc-Ue-1CX">
+                                                        <rect key="frame" x="185" y="0.0" width="189" height="35"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة الفجر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcu-7U-Trs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="7.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ركعتان)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C79-Zo-Syo">
+                                                                <rect key="frame" x="0.0" y="27.5" width="189" height="7.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.048384107650000001" green="0.16720879080000001" blue="0.24626189470000001" alpha="0.85498875500000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="du6-vZ-4eY"/>
+                                    <constraint firstAttribute="trailing" secondItem="LJN-MZ-7QW" secondAttribute="trailing" constant="20" id="kD1-iz-2pk"/>
+                                    <constraint firstItem="LJN-MZ-7QW" firstAttribute="centerY" secondItem="m14-UY-jJv" secondAttribute="centerY" id="vkE-e4-Y9H"/>
+                                    <constraint firstItem="LJN-MZ-7QW" firstAttribute="leading" secondItem="m14-UY-jJv" secondAttribute="leading" constant="20" id="z0O-tZ-lfK"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-Cz-ilI">
+                                <rect key="frame" x="148.5" y="257.5" width="117.5" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8z-Fe-aDn">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etz-Su-ydn">
+                                        <rect key="frame" x="0.0" y="56" width="117.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="137" translatesAutoresizingMaskIntoConstraints="NO" id="bPD-kQ-E2x">
+                                <rect key="frame" x="20" y="64" width="374" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1L-7c-ShW">
+                                        <rect key="frame" x="0.0" y="12" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="m1L-7c-ShW" secondAttribute="height" multiplier="1:1" id="qMa-OL-mQO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCancelPressed:" destination="EX3-tA-UCh" eventType="touchUpInside" id="Yf9-VK-79U"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DkR-UD-K6K">
+                                        <rect key="frame" x="168" y="0.0" width="206" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة الفجر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYV-DD-F0d">
+                                                <rect key="frame" x="96.5" y="0.0" width="109.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bpn-Ga-j0u">
+                                                <rect key="frame" x="87.5" y="35" width="118.5" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مارس  3 ، 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMF-Mq-Ypv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-Mo-3OM">
+                                                        <rect key="frame" x="97.5" y="1" width="21" height="17.5"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Heg-6T-auq"/>
+                        <color key="backgroundColor" red="0.048384107650000001" green="0.16720879080000001" blue="0.24626189470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bPD-kQ-E2x" firstAttribute="top" secondItem="Heg-6T-auq" secondAttribute="top" constant="20" id="1vq-PS-112"/>
+                            <constraint firstItem="ljF-Cz-ilI" firstAttribute="centerX" secondItem="HjV-LK-r5u" secondAttribute="centerX" id="5Dy-Eb-HR6"/>
+                            <constraint firstAttribute="bottom" secondItem="m14-UY-jJv" secondAttribute="bottom" id="7Yt-r4-KmP"/>
+                            <constraint firstItem="HjV-LK-r5u" firstAttribute="trailing" secondItem="Heg-6T-auq" secondAttribute="trailing" id="CDo-Ks-rEL"/>
+                            <constraint firstItem="HjV-LK-r5u" firstAttribute="height" secondItem="IW2-H7-bbg" secondAttribute="height" multiplier="0.7" id="FQJ-nK-1Rs"/>
+                            <constraint firstItem="m14-UY-jJv" firstAttribute="leading" secondItem="Heg-6T-auq" secondAttribute="leading" id="XjN-hW-z5E"/>
+                            <constraint firstItem="ljF-Cz-ilI" firstAttribute="centerY" secondItem="HjV-LK-r5u" secondAttribute="centerY" id="Ydw-cq-HF2"/>
+                            <constraint firstItem="HjV-LK-r5u" firstAttribute="top" secondItem="IW2-H7-bbg" secondAttribute="top" id="iCS-hP-Xzj"/>
+                            <constraint firstItem="HjV-LK-r5u" firstAttribute="leading" secondItem="Heg-6T-auq" secondAttribute="leading" id="lrR-Np-sSc"/>
+                            <constraint firstItem="Heg-6T-auq" firstAttribute="trailing" secondItem="bPD-kQ-E2x" secondAttribute="trailing" constant="20" id="oQR-ds-nmF"/>
+                            <constraint firstItem="m14-UY-jJv" firstAttribute="trailing" secondItem="Heg-6T-auq" secondAttribute="trailing" id="r2o-mu-0Sc"/>
+                            <constraint firstItem="bPD-kQ-E2x" firstAttribute="leading" secondItem="Heg-6T-auq" secondAttribute="leading" constant="20" id="yFZ-CG-dU5"/>
+                            <constraint firstItem="bPD-kQ-E2x" firstAttribute="centerX" secondItem="Heg-6T-auq" secondAttribute="centerX" id="ycQ-yt-vJy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSouna" destination="60e-Sa-YEd" id="dhn-9F-F64"/>
+                        <outlet property="footerView" destination="m14-UY-jJv" id="Q58-h7-zg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmm-HD-CYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1807" y="81"/>
+        </scene>
+        <!--Duha PrayVC-->
+        <scene sceneID="fyb-x6-t2F">
+            <objects>
+                <viewController restorationIdentifier="DuhaPrayVC" storyboardIdentifier="DuhaPrayVC" id="hu7-IO-yRF" customClass="DuhaPrayVC" customModule="Muslim_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="deE-le-1dA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duhur" translatesAutoresizingMaskIntoConstraints="NO" id="Lf5-0K-Fou">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUk-dF-URJ">
+                                <rect key="frame" x="0.0" y="610" width="414" height="286"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="qgw-tM-UoG">
+                                        <rect key="frame" x="20" y="112" width="374" height="62"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="X9k-yW-6YF">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-Q1-1D0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="62"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tBg-Q1-1D0" secondAttribute="height" multiplier="1:1" id="AW1-Fr-LnJ"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="notdone" cornerStyle="capsule">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="duhaPressed:" destination="hu7-IO-yRF" eventType="touchUpInside" id="O32-fy-3u2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6H5-pE-pz2">
+                                                        <rect key="frame" x="211.5" y="0.0" width="162.5" height="62"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة الضحي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7T-pR-bea">
+                                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ركعتان)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evJ-uL-aYD">
+                                                                <rect key="frame" x="0.0" y="41" width="162.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.54090710031121392" green="0.91868138310000003" blue="0.90351414679999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qgw-tM-UoG" firstAttribute="centerY" secondItem="YUk-dF-URJ" secondAttribute="centerY" id="4z7-QG-1iO"/>
+                                    <constraint firstAttribute="height" constant="286" id="FUD-is-5ka"/>
+                                    <constraint firstItem="qgw-tM-UoG" firstAttribute="leading" secondItem="YUk-dF-URJ" secondAttribute="leading" constant="20" id="NLK-yW-Lvq"/>
+                                    <constraint firstAttribute="trailing" secondItem="qgw-tM-UoG" secondAttribute="trailing" constant="20" id="QAX-FT-qmP"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oqL-e9-1NV">
+                                <rect key="frame" x="145.5" y="257.5" width="123" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-ph-sZD">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mm-PS-8d5">
+                                        <rect key="frame" x="0.0" y="56" width="123" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="137" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-dA-55K">
+                                <rect key="frame" x="20" y="64" width="374" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BE-k1-bHx">
+                                        <rect key="frame" x="0.0" y="12" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6BE-k1-bHx" secondAttribute="height" multiplier="1:1" id="m0V-JO-fpl"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCancelPressed:" destination="hu7-IO-yRF" eventType="touchUpInside" id="d1i-31-MTH"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DWV-Qc-mdY">
+                                        <rect key="frame" x="168" y="0.0" width="206" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاه الضحى" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jb-IR-e52">
+                                                <rect key="frame" x="82" y="0.0" width="124" height="27"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iUZ-KJ-Uxm">
+                                                <rect key="frame" x="87.5" y="35" width="118.5" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مارس  3 ، 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqR-dZ-LA5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-OO-67q">
+                                                        <rect key="frame" x="97.5" y="1" width="21" height="17.5"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="57j-e4-KKm"/>
+                        <color key="backgroundColor" red="0.50518667699999997" green="0.82146573069999995" blue="0.9762101769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lf5-0K-Fou" firstAttribute="leading" secondItem="57j-e4-KKm" secondAttribute="leading" id="0ca-RK-H86"/>
+                            <constraint firstItem="oqL-e9-1NV" firstAttribute="centerY" secondItem="Lf5-0K-Fou" secondAttribute="centerY" id="IQv-98-gU4"/>
+                            <constraint firstItem="YUk-dF-URJ" firstAttribute="leading" secondItem="57j-e4-KKm" secondAttribute="leading" id="N9A-GY-uwg"/>
+                            <constraint firstItem="TqV-dA-55K" firstAttribute="centerX" secondItem="57j-e4-KKm" secondAttribute="centerX" id="NDR-Yr-vfG"/>
+                            <constraint firstItem="57j-e4-KKm" firstAttribute="trailing" secondItem="TqV-dA-55K" secondAttribute="trailing" constant="20" id="QCx-5O-fvo"/>
+                            <constraint firstAttribute="bottom" secondItem="YUk-dF-URJ" secondAttribute="bottom" id="U1D-YY-Lfu"/>
+                            <constraint firstItem="YUk-dF-URJ" firstAttribute="trailing" secondItem="57j-e4-KKm" secondAttribute="trailing" id="aKO-HM-iVP"/>
+                            <constraint firstItem="Lf5-0K-Fou" firstAttribute="top" secondItem="deE-le-1dA" secondAttribute="top" id="arK-bl-jd8"/>
+                            <constraint firstItem="Lf5-0K-Fou" firstAttribute="trailing" secondItem="57j-e4-KKm" secondAttribute="trailing" id="auz-hy-2L1"/>
+                            <constraint firstItem="oqL-e9-1NV" firstAttribute="centerX" secondItem="Lf5-0K-Fou" secondAttribute="centerX" id="cpA-V6-ciq"/>
+                            <constraint firstItem="TqV-dA-55K" firstAttribute="top" secondItem="57j-e4-KKm" secondAttribute="top" constant="20" id="dsM-Dw-X7P"/>
+                            <constraint firstItem="TqV-dA-55K" firstAttribute="leading" secondItem="57j-e4-KKm" secondAttribute="leading" constant="20" id="fiw-b7-tgd"/>
+                            <constraint firstItem="Lf5-0K-Fou" firstAttribute="height" secondItem="deE-le-1dA" secondAttribute="height" multiplier="0.7" id="sAq-Zt-RgM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerView" destination="YUk-dF-URJ" id="ecx-Pk-R8g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3C-qX-9w1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1107.2463768115942" y="79.6875"/>
+        </scene>
+        <!--Duhr PrayVC-->
+        <scene sceneID="eKJ-6C-NC7">
+            <objects>
+                <viewController restorationIdentifier="DuhrPrayVC" storyboardIdentifier="DuhrPrayVC" id="9BR-jJ-Dhd" customClass="DuhrPrayVC" customModule="Muslim_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gEP-jx-ZGD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duha" translatesAutoresizingMaskIntoConstraints="NO" id="5ym-l2-rUN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNy-cB-sX6">
+                                <rect key="frame" x="0.0" y="610" width="414" height="286"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="twG-2g-RGP">
+                                        <rect key="frame" x="20" y="69" width="374" height="148"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-jd-AoJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xM-LH-dNZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="6xM-LH-dNZ" secondAttribute="height" multiplier="1:1" id="UVi-Jn-chG"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sonaDuhrPressed:" destination="9BR-jJ-Dhd" eventType="touchUpInside" id="0qs-qI-zPu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-uV-nun">
+                                                        <rect key="frame" x="184" y="0.0" width="190" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سنه الظهر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFs-4x-B1u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="190" height="7"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ركعتان قبل وبعد الضهر)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-No-kci">
+                                                                <rect key="frame" x="0.0" y="27" width="190" height="7"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="WUz-Kj-snR">
+                                                <rect key="frame" x="0.0" y="114" width="374" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-ZC-AY9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="nIU-ZC-AY9" secondAttribute="height" multiplier="1:1" id="Rc5-Yu-uyq"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="DuhrPressed:" destination="9BR-jJ-Dhd" eventType="touchUpInside" id="zTw-wA-aho"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="s3h-fN-5uy">
+                                                        <rect key="frame" x="184" y="0.0" width="190" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة الظهر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TV-43-4gT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="190" height="7"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(4 ركعات)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-mZ-Jgx">
+                                                                <rect key="frame" x="0.0" y="27" width="190" height="7"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45873540639999999" green="0.8382511735" blue="0.94774371390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="twG-2g-RGP" secondAttribute="trailing" constant="20" id="MIh-Ys-5r5"/>
+                                    <constraint firstItem="twG-2g-RGP" firstAttribute="leading" secondItem="gNy-cB-sX6" secondAttribute="leading" constant="20" id="XHu-YX-s5S"/>
+                                    <constraint firstAttribute="height" constant="286" id="fS1-bS-3Zh"/>
+                                    <constraint firstItem="twG-2g-RGP" firstAttribute="centerY" secondItem="gNy-cB-sX6" secondAttribute="centerY" id="kr3-16-1kS"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-jf-u2s">
+                                <rect key="frame" x="150.5" y="257.5" width="113.5" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75z-e2-zw8">
+                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJb-Wg-GXo">
+                                        <rect key="frame" x="0.0" y="56" width="113.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="137" translatesAutoresizingMaskIntoConstraints="NO" id="6lY-YA-Tib">
+                                <rect key="frame" x="20" y="64" width="374" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3G-UG-GIX">
+                                        <rect key="frame" x="0.0" y="12" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Y3G-UG-GIX" secondAttribute="height" multiplier="1:1" id="WL3-8x-fik"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCancelPressed:" destination="9BR-jJ-Dhd" eventType="touchUpInside" id="rqS-0t-2hl"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-FS-hKd">
+                                        <rect key="frame" x="168" y="0.0" width="206" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة الظهر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGJ-My-SrA">
+                                                <rect key="frame" x="85" y="0.0" width="121" height="27"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oby-dh-p4I">
+                                                <rect key="frame" x="87.5" y="35" width="118.5" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مارس  3 ، 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGm-mz-h5E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="usc-G3-yk2">
+                                                        <rect key="frame" x="97.5" y="1" width="21" height="17.5"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qrk-gN-l1s"/>
+                        <color key="backgroundColor" red="0.72424530980000001" green="0.89418822529999997" blue="0.92431312799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gNy-cB-sX6" secondAttribute="bottom" id="4hA-l8-VDu"/>
+                            <constraint firstItem="qrk-gN-l1s" firstAttribute="trailing" secondItem="6lY-YA-Tib" secondAttribute="trailing" constant="20" id="7RC-W0-Hy0"/>
+                            <constraint firstItem="5ym-l2-rUN" firstAttribute="trailing" secondItem="qrk-gN-l1s" secondAttribute="trailing" id="C8S-5S-Uq8"/>
+                            <constraint firstItem="5ym-l2-rUN" firstAttribute="leading" secondItem="qrk-gN-l1s" secondAttribute="leading" id="LT2-oF-HHI"/>
+                            <constraint firstItem="6lY-YA-Tib" firstAttribute="leading" secondItem="qrk-gN-l1s" secondAttribute="leading" constant="20" id="Uvv-xW-ZgC"/>
+                            <constraint firstItem="gNy-cB-sX6" firstAttribute="trailing" secondItem="qrk-gN-l1s" secondAttribute="trailing" id="YiX-oW-X2Y"/>
+                            <constraint firstItem="gKL-jf-u2s" firstAttribute="centerX" secondItem="5ym-l2-rUN" secondAttribute="centerX" id="bk4-cd-dHD"/>
+                            <constraint firstItem="5ym-l2-rUN" firstAttribute="height" secondItem="gEP-jx-ZGD" secondAttribute="height" multiplier="0.7" id="cRq-wx-bpX"/>
+                            <constraint firstItem="6lY-YA-Tib" firstAttribute="top" secondItem="qrk-gN-l1s" secondAttribute="top" constant="20" id="cq8-Uo-T9D"/>
+                            <constraint firstItem="5ym-l2-rUN" firstAttribute="top" secondItem="gEP-jx-ZGD" secondAttribute="top" id="hO3-cG-CNN"/>
+                            <constraint firstItem="gNy-cB-sX6" firstAttribute="leading" secondItem="qrk-gN-l1s" secondAttribute="leading" id="oMi-VI-6mv"/>
+                            <constraint firstItem="gKL-jf-u2s" firstAttribute="centerY" secondItem="5ym-l2-rUN" secondAttribute="centerY" id="qUw-Lz-osP"/>
+                            <constraint firstItem="6lY-YA-Tib" firstAttribute="centerX" secondItem="qrk-gN-l1s" secondAttribute="centerX" id="uoP-Ky-q6H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerView" destination="gNy-cB-sX6" id="NRR-if-XWI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Eg-Os-AcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="80"/>
+        </scene>
+        <!--Asr PrayVC-->
+        <scene sceneID="Sjs-tn-qKs">
+            <objects>
+                <viewController restorationIdentifier="AsrPrayVC" storyboardIdentifier="AsrPrayVC" id="hfy-vy-24N" customClass="AsrPrayVC" customModule="Muslim_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FK9-Wn-k6N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asr" translatesAutoresizingMaskIntoConstraints="NO" id="YQJ-h3-ZxF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8l-b8-gLS">
+                                <rect key="frame" x="0.0" y="610" width="414" height="286"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="WRG-9P-RYl">
+                                        <rect key="frame" x="20" y="126" width="374" height="34"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="qLv-e3-Ls2">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88E-gF-6eY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="88E-gF-6eY" secondAttribute="height" multiplier="1:1" id="MAF-8A-xQm"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="AsrPressed:" destination="hfy-vy-24N" eventType="touchUpInside" id="uRg-6I-8vW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CCK-s6-FZS">
+                                                        <rect key="frame" x="184" y="0.0" width="190" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة العصر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOj-bg-NXr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="190" height="7"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(4 ركعات)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvx-gV-Xkd">
+                                                                <rect key="frame" x="0.0" y="27" width="190" height="7"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99395972489999995" green="0.42843160029999999" blue="0.3283495307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="7zc-03-bA8"/>
+                                    <constraint firstItem="WRG-9P-RYl" firstAttribute="centerY" secondItem="X8l-b8-gLS" secondAttribute="centerY" id="8so-x0-JE2"/>
+                                    <constraint firstAttribute="trailing" secondItem="WRG-9P-RYl" secondAttribute="trailing" constant="20" id="Fyc-Ze-8DW"/>
+                                    <constraint firstItem="WRG-9P-RYl" firstAttribute="leading" secondItem="X8l-b8-gLS" secondAttribute="leading" constant="20" id="Qej-ND-P4M"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sJf-ZZ-dzH">
+                                <rect key="frame" x="146.5" y="257.5" width="121.5" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6co-hH-A8z">
+                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Von-U9-Ryz">
+                                        <rect key="frame" x="0.0" y="56" width="121.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="137" translatesAutoresizingMaskIntoConstraints="NO" id="S31-kE-rfi">
+                                <rect key="frame" x="20" y="64" width="374" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa6-Nx-w4z">
+                                        <rect key="frame" x="0.0" y="12" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Aa6-Nx-w4z" secondAttribute="height" multiplier="1:1" id="wPQ-th-ZDV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCancelPressed:" destination="hfy-vy-24N" eventType="touchUpInside" id="Ytb-du-elh"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qrd-PK-E23">
+                                        <rect key="frame" x="168" y="0.0" width="206" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة العصر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFy-ed-GF9">
+                                                <rect key="frame" x="87" y="0.0" width="119" height="27"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3mV-hR-WbX">
+                                                <rect key="frame" x="87.5" y="35" width="118.5" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مارس  3 ، 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjh-aa-N4A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8E7-d0-w1A">
+                                                        <rect key="frame" x="97.5" y="1" width="21" height="17.5"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a2M-lz-B6n"/>
+                        <color key="backgroundColor" red="0.81480664010000003" green="0.43185931440000003" blue="0.48217421770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YQJ-h3-ZxF" firstAttribute="height" secondItem="FK9-Wn-k6N" secondAttribute="height" multiplier="0.7" id="0ph-eh-DwB"/>
+                            <constraint firstItem="sJf-ZZ-dzH" firstAttribute="centerX" secondItem="YQJ-h3-ZxF" secondAttribute="centerX" id="7f7-Gc-ANa"/>
+                            <constraint firstItem="S31-kE-rfi" firstAttribute="top" secondItem="a2M-lz-B6n" secondAttribute="top" constant="20" id="LA9-4D-hMm"/>
+                            <constraint firstItem="YQJ-h3-ZxF" firstAttribute="top" secondItem="FK9-Wn-k6N" secondAttribute="top" id="T0O-To-KDA"/>
+                            <constraint firstItem="S31-kE-rfi" firstAttribute="leading" secondItem="a2M-lz-B6n" secondAttribute="leading" constant="20" id="TB9-j0-ijg"/>
+                            <constraint firstAttribute="bottom" secondItem="X8l-b8-gLS" secondAttribute="bottom" id="YmA-sn-Ml4"/>
+                            <constraint firstItem="X8l-b8-gLS" firstAttribute="trailing" secondItem="a2M-lz-B6n" secondAttribute="trailing" id="ZAE-an-9tP"/>
+                            <constraint firstItem="X8l-b8-gLS" firstAttribute="leading" secondItem="a2M-lz-B6n" secondAttribute="leading" id="aGv-PO-PLj"/>
+                            <constraint firstItem="S31-kE-rfi" firstAttribute="centerX" secondItem="a2M-lz-B6n" secondAttribute="centerX" id="lmS-YG-p0w"/>
+                            <constraint firstItem="YQJ-h3-ZxF" firstAttribute="trailing" secondItem="a2M-lz-B6n" secondAttribute="trailing" id="o2t-R1-IbN"/>
+                            <constraint firstItem="YQJ-h3-ZxF" firstAttribute="leading" secondItem="a2M-lz-B6n" secondAttribute="leading" id="roP-pc-VQ7"/>
+                            <constraint firstItem="sJf-ZZ-dzH" firstAttribute="centerY" secondItem="YQJ-h3-ZxF" secondAttribute="centerY" id="vch-hA-QeO"/>
+                            <constraint firstItem="a2M-lz-B6n" firstAttribute="trailing" secondItem="S31-kE-rfi" secondAttribute="trailing" constant="20" id="wqC-nU-vB6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerView" destination="X8l-b8-gLS" id="Xja-d5-NCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umC-36-Czl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="80"/>
+        </scene>
+        <!--Maghreb PrayVC-->
+        <scene sceneID="kcR-Dl-B0s">
+            <objects>
+                <viewController restorationIdentifier="MaghrebPrayVC" storyboardIdentifier="MaghrebPrayVC" id="Scd-6y-7zl" customClass="MaghrebPrayVC" customModule="Muslim_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dPp-vm-3M4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maghreb" translatesAutoresizingMaskIntoConstraints="NO" id="Wph-CV-cOe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byL-dc-KEN">
+                                <rect key="frame" x="0.0" y="610" width="414" height="286"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="dA8-U1-E5x">
+                                        <rect key="frame" x="20" y="70" width="374" height="146"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="xf3-OQ-LzP">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5g-vf-yyH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="X5g-vf-yyH" secondAttribute="height" multiplier="1:1" id="RvR-EK-JVu"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sonaMaghreibPressed:" destination="Scd-6y-7zl" eventType="touchUpInside" id="er9-HA-GQa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tTR-Zh-Yd8">
+                                                        <rect key="frame" x="183" y="0.0" width="191" height="33"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سنه المغرب" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1g-gQ-Sf7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ركعتان بعد المغرب)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC5-4O-ucz">
+                                                                <rect key="frame" x="0.0" y="26.5" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="crJ-az-bkL">
+                                                <rect key="frame" x="0.0" y="113" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-CP-aZT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zQd-CP-aZT" secondAttribute="height" multiplier="1:1" id="hoG-f7-fqL"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="maghribPressed:" destination="Scd-6y-7zl" eventType="touchUpInside" id="60Y-bM-ETp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7lo-iz-BYF">
+                                                        <rect key="frame" x="183" y="0.0" width="191" height="33"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة المغرب" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKM-E0-D8b">
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(4 ركعات)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMu-2U-Q6T">
+                                                                <rect key="frame" x="0.0" y="26.5" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.56618160009999996" green="0.22830757500000001" blue="0.40128692980000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dA8-U1-E5x" firstAttribute="leading" secondItem="byL-dc-KEN" secondAttribute="leading" constant="20" id="C5S-WM-HWS"/>
+                                    <constraint firstAttribute="height" constant="286" id="DNk-XO-g22"/>
+                                    <constraint firstItem="dA8-U1-E5x" firstAttribute="centerY" secondItem="byL-dc-KEN" secondAttribute="centerY" id="Lb1-cl-7Lz"/>
+                                    <constraint firstAttribute="trailing" secondItem="dA8-U1-E5x" secondAttribute="trailing" constant="20" id="Yr6-xV-VEj"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R96-Fx-eoY">
+                                <rect key="frame" x="145.5" y="257.5" width="123.5" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs2-if-9DP">
+                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKW-xT-Iip">
+                                        <rect key="frame" x="0.0" y="56" width="123.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="137" translatesAutoresizingMaskIntoConstraints="NO" id="WUJ-3J-Q8N">
+                                <rect key="frame" x="20" y="64" width="374" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFJ-Bm-DIa">
+                                        <rect key="frame" x="0.0" y="12" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zFJ-Bm-DIa" secondAttribute="height" multiplier="1:1" id="dbJ-Za-xMK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCancelPressed:" destination="Scd-6y-7zl" eventType="touchUpInside" id="TWj-2l-hgC"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ePf-Jr-8dT">
+                                        <rect key="frame" x="168" y="0.0" width="206" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة المغرب" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-zv-q1o">
+                                                <rect key="frame" x="73" y="0.0" width="133" height="27"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wc5-ph-kEK">
+                                                <rect key="frame" x="87.5" y="35" width="118.5" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مارس  3 ، 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibn-vR-48m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y7Z-kd-3et">
+                                                        <rect key="frame" x="97.5" y="1" width="21" height="17.5"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oj8-6v-Rgb"/>
+                        <color key="backgroundColor" red="0.52557170389999996" green="0.24932116269999999" blue="0.60336959359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WUJ-3J-Q8N" firstAttribute="top" secondItem="oj8-6v-Rgb" secondAttribute="top" constant="20" id="1Tu-Id-TL6"/>
+                            <constraint firstItem="WUJ-3J-Q8N" firstAttribute="centerX" secondItem="oj8-6v-Rgb" secondAttribute="centerX" id="9Kg-iJ-DYk"/>
+                            <constraint firstItem="Wph-CV-cOe" firstAttribute="leading" secondItem="oj8-6v-Rgb" secondAttribute="leading" id="B5h-fL-ejq"/>
+                            <constraint firstItem="R96-Fx-eoY" firstAttribute="centerX" secondItem="Wph-CV-cOe" secondAttribute="centerX" id="CcT-1l-8mR"/>
+                            <constraint firstItem="Wph-CV-cOe" firstAttribute="height" secondItem="dPp-vm-3M4" secondAttribute="height" multiplier="0.7" id="E2h-c6-Pmp"/>
+                            <constraint firstItem="byL-dc-KEN" firstAttribute="trailing" secondItem="oj8-6v-Rgb" secondAttribute="trailing" id="GsG-0n-tr8"/>
+                            <constraint firstAttribute="bottom" secondItem="byL-dc-KEN" secondAttribute="bottom" id="JqY-1Q-hw2"/>
+                            <constraint firstItem="oj8-6v-Rgb" firstAttribute="trailing" secondItem="WUJ-3J-Q8N" secondAttribute="trailing" constant="20" id="KCf-Qz-gng"/>
+                            <constraint firstItem="Wph-CV-cOe" firstAttribute="trailing" secondItem="oj8-6v-Rgb" secondAttribute="trailing" id="Tzq-2l-Doa"/>
+                            <constraint firstItem="WUJ-3J-Q8N" firstAttribute="leading" secondItem="oj8-6v-Rgb" secondAttribute="leading" constant="20" id="aLF-2H-OgC"/>
+                            <constraint firstItem="R96-Fx-eoY" firstAttribute="centerY" secondItem="Wph-CV-cOe" secondAttribute="centerY" id="eHu-m9-rXg"/>
+                            <constraint firstItem="Wph-CV-cOe" firstAttribute="top" secondItem="dPp-vm-3M4" secondAttribute="top" id="f8l-eO-kMp"/>
+                            <constraint firstItem="byL-dc-KEN" firstAttribute="leading" secondItem="oj8-6v-Rgb" secondAttribute="leading" id="vcg-lM-N2i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerView" destination="byL-dc-KEN" id="t6j-ox-ay7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdu-oP-FWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1465" y="765"/>
+        </scene>
+        <!--Isha PrayVC-->
+        <scene sceneID="8Fc-0n-UQk">
+            <objects>
+                <viewController restorationIdentifier="IshaPrayVC" storyboardIdentifier="IshaPrayVC" id="Ubh-aG-tHZ" customClass="IshaPrayVC" customModule="Muslim_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a5I-mI-hz2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isha" translatesAutoresizingMaskIntoConstraints="NO" id="Ad2-9I-Ztc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjX-s2-hql">
+                                <rect key="frame" x="0.0" y="610" width="414" height="286"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="nwI-6m-9Yd">
+                                        <rect key="frame" x="20" y="70" width="374" height="146"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="kBC-1s-Y4A">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-YQ-aOV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hJ8-YQ-aOV" secondAttribute="height" multiplier="1:1" id="7Ej-Z5-tLq"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sonaIshaPressed:" destination="Ubh-aG-tHZ" eventType="touchUpInside" id="GtW-jR-fue"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zeK-KJ-TFg">
+                                                        <rect key="frame" x="183" y="0.0" width="191" height="33"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سنة العشاء" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8v1-ie-3mt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ركعتان بعد العشاء)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYS-a9-qtd">
+                                                                <rect key="frame" x="0.0" y="26.5" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="Nei-c0-dPK">
+                                                <rect key="frame" x="0.0" y="113" width="374" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xld-AS-gzM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="xld-AS-gzM" secondAttribute="height" multiplier="1:1" id="8cr-7S-aQe"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="notdone">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="ishaPressed:" destination="Ubh-aG-tHZ" eventType="touchUpInside" id="4fU-66-BE4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oZT-4z-Ch8">
+                                                        <rect key="frame" x="183" y="0.0" width="191" height="33"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة العشاء" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx2-DH-SPp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(4 ركعات)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge7-R5-Dgh">
+                                                                <rect key="frame" x="0.0" y="26.5" width="191" height="6.5"/>
+                                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40902873870000001" green="0.3146315515" blue="0.56342881919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nwI-6m-9Yd" secondAttribute="trailing" constant="20" id="7q0-uw-vdv"/>
+                                    <constraint firstAttribute="height" constant="286" id="U77-bj-IeK"/>
+                                    <constraint firstItem="nwI-6m-9Yd" firstAttribute="centerY" secondItem="pjX-s2-hql" secondAttribute="centerY" id="UEc-D6-Jwy"/>
+                                    <constraint firstItem="nwI-6m-9Yd" firstAttribute="leading" secondItem="pjX-s2-hql" secondAttribute="leading" constant="20" id="UjE-lP-Scx"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DQU-Lc-Adp">
+                                <rect key="frame" x="147.5" y="257.5" width="119.5" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:03" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-LV-DMu">
+                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3J1-sU-ACZ">
+                                        <rect key="frame" x="0.0" y="56" width="119.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="137" translatesAutoresizingMaskIntoConstraints="NO" id="mxl-1p-3Ne">
+                                <rect key="frame" x="20" y="64" width="374" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l11-dK-YqL">
+                                        <rect key="frame" x="0.0" y="12" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="l11-dK-YqL" secondAttribute="height" multiplier="1:1" id="S78-fP-r2x"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCancelPressed:" destination="Ubh-aG-tHZ" eventType="touchUpInside" id="6eG-2d-A9I"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="H2h-fn-TSO">
+                                        <rect key="frame" x="168" y="0.0" width="206" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صلاة العشاء" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-e0-DKK">
+                                                <rect key="frame" x="74" y="0.0" width="132" height="27"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RuB-Mr-WDE">
+                                                <rect key="frame" x="87.5" y="35" width="118.5" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مارس  3 ، 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmY-zY-Ooh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QR5-hZ-5uJ">
+                                                        <rect key="frame" x="97.5" y="1" width="21" height="17.5"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T0q-hc-F9E"/>
+                        <color key="backgroundColor" red="0.41520690919999997" green="0.36159861090000001" blue="0.73137754200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ad2-9I-Ztc" firstAttribute="height" secondItem="a5I-mI-hz2" secondAttribute="height" multiplier="0.7" id="27R-HB-hSO"/>
+                            <constraint firstItem="Ad2-9I-Ztc" firstAttribute="leading" secondItem="T0q-hc-F9E" secondAttribute="leading" id="67K-F3-aw9"/>
+                            <constraint firstItem="pjX-s2-hql" firstAttribute="leading" secondItem="T0q-hc-F9E" secondAttribute="leading" id="8GI-s4-pR1"/>
+                            <constraint firstItem="mxl-1p-3Ne" firstAttribute="centerX" secondItem="T0q-hc-F9E" secondAttribute="centerX" id="8Zi-IQ-bAa"/>
+                            <constraint firstItem="T0q-hc-F9E" firstAttribute="trailing" secondItem="mxl-1p-3Ne" secondAttribute="trailing" constant="20" id="INp-ik-TfL"/>
+                            <constraint firstItem="Ad2-9I-Ztc" firstAttribute="top" secondItem="a5I-mI-hz2" secondAttribute="top" id="UXH-q1-w83"/>
+                            <constraint firstAttribute="bottom" secondItem="pjX-s2-hql" secondAttribute="bottom" id="Uxr-Py-Suy"/>
+                            <constraint firstItem="DQU-Lc-Adp" firstAttribute="centerX" secondItem="Ad2-9I-Ztc" secondAttribute="centerX" id="lgZ-fR-hAP"/>
+                            <constraint firstItem="DQU-Lc-Adp" firstAttribute="centerY" secondItem="Ad2-9I-Ztc" secondAttribute="centerY" id="lys-Qd-2ZB"/>
+                            <constraint firstItem="mxl-1p-3Ne" firstAttribute="top" secondItem="T0q-hc-F9E" secondAttribute="top" constant="20" id="mgW-PP-3n7"/>
+                            <constraint firstItem="mxl-1p-3Ne" firstAttribute="leading" secondItem="T0q-hc-F9E" secondAttribute="leading" constant="20" id="nUC-Ec-yzv"/>
+                            <constraint firstItem="Ad2-9I-Ztc" firstAttribute="trailing" secondItem="T0q-hc-F9E" secondAttribute="trailing" id="rvf-J2-QEF"/>
+                            <constraint firstItem="pjX-s2-hql" firstAttribute="trailing" secondItem="T0q-hc-F9E" secondAttribute="trailing" id="uVb-Ph-7AI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerView" destination="pjX-s2-hql" id="99i-Ix-0bG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKl-79-Uz0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="765"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fagr" width="398.5" height="375.5"/>
+        <image name="asr" width="375" height="426.5"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="duha" width="375" height="426.5"/>
+        <image name="duhur" width="375" height="426.5"/>
+        <image name="isha" width="375" height="426.5"/>
+        <image name="maghreb" width="375" height="465.5"/>
+        <image name="notdone" width="24" height="24"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

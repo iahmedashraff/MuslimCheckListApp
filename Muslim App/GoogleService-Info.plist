@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>498711773671-4rdf6qrtomekq0kkfq50ksb4p4j57g4h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.498711773671-4rdf6qrtomekq0kkfq50ksb4p4j57g4h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA4153OM2q95ekpIeZCyV8CMuLRdZxWhZo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>498711773671</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.roqay.Azkar</string>
+	<key>PROJECT_ID</key>
+	<string>muslimchecklist-5235e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>muslimchecklist-5235e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:498711773671:ios:96475f6e98183b8a2c7d42</string>
+	<key>DATABASE_URL</key>
+	<string>https://muslimchecklist-5235e-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

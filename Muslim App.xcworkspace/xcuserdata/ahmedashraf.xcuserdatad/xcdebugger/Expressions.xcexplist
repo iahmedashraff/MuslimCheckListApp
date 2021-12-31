@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RegisterVC.compeletNumper():RegisterVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txtTextFiled.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CompeleteRegisterVC.btnCompleteRegisterPressed(_:):CompeleteRegisterVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txtPassword">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
